@@ -1,0 +1,262 @@
+@font-face {
+    font-family: styreneB;
+    src: url(../StyreneBLC-Regular.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+    font-family: styreneB;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.main-nav{
+    font-size: 1.75em;
+    position: fixed;
+    top: 1.5rem;
+    /* display: flex; */
+    left: 3rem;
+    width: calc(100vw - 6rem);
+    z-index: 1001;
+}
+/* .main-nav div{
+    flex: 1;
+} */
+.main-nav div a{
+    width: fit-content;
+    position: fixed;
+}
+.name{
+    position: fixed;
+    left:3rem;
+}
+.work{
+    /* text-align: center; */
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+}
+.info{
+    /* text-align: right; */
+    position: fixed;
+    right: 6rem;
+}
+
+.sub-nav{
+    font-size: 1.25em;
+    position: fixed;
+    bottom: 1.75rem;
+    /* display: flex; */
+    left: 50%;
+    transform: translate(-50%);
+    width: calc(100vw - 6rem);
+    text-align: center;
+    z-index: 1000;
+    width: fit-content;
+}
+.sub-nav a{
+    margin-left:1rem;
+    margin-right: 1rem;
+    cursor: pointer !important;
+}
+
+.canv{
+    position: relative;
+    width:150vw;
+    height: 150vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.disabled{
+    color: rgba(0, 0, 0, 0.15);
+}
+
+.conductive, .aqueous, .plana, .insulative, .active, .roots{
+    position: absolute;
+    /* display: block; */
+}
+.conductive{
+    width: 75vw;
+    height: 75vh;
+    top: 0;
+    left: 0;
+}
+.aqueous{
+    width: 37.5vw;
+    height: 37.5vh;
+    top: 53vh;
+    left: 76vw;
+}
+.planar{
+    width: 37.5vw;
+    height: 37.5vh;
+    bottom: 0;
+    left: 0;
+}
+.insulative{
+    width: 75vw;
+    height: 37.5vh;
+    top: 0;
+    right: 0;
+}
+.active{
+    width: 37.5vw;
+    height: 37.5vh;
+    bottom: 0;
+    left: 30vw;
+}
+.roots{
+    width: 37.5vw;
+    height: 37.5vh;
+    bottom: 0;
+    right: 0;
+}
+
+.imgContain{
+    position: absolute;
+}
+.smallH{
+    display: inline-block;
+    /* position: relative; */
+    width: 15vw;
+    /* height: 100%; */
+    height: fit-content;
+    top:0;
+    left:0;
+}
+.smallV{
+    display: inline-block;
+    /* position: relative; */
+    width: fit-content;
+    height: 15vw;
+    bottom:5vh;
+    right:0;
+
+}
+.smallH img{
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    /* max-height: 100%; */
+}
+.smallV img{
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+    /* max-height: 100%; */
+}
+
+img:hover{
+    z-index: 2000;
+}
+
+/* conductive */
+#c1{
+    left:12vw;
+    top:2vh;
+}
+#c2{
+    left: 44vw;
+    top: 57vh;
+}
+#c3{
+    left: 20vw;
+    top: 48vh;
+}
+#c4{
+    left: 44vw;
+    top: -5vh;
+}
+#c5{
+    left: 33vw;
+    top: 38vh;
+}
+#c6{
+    left: 23vw;
+    top: 22vh;
+}
+
+/* aqueous */
+#a1{
+    left:0vw;
+    top: 25vh;
+}
+#a2{
+    left:10vw;
+    top:5vh;
+}
+#a3{
+    left:18vw;
+    top:32vh;
+}
+
+/* planar */
+#p1{
+    right:13vw;
+    top:13vh;
+}
+
+/* insulative */
+#i1{
+    left:5vw;
+    top:12vh;
+}
+#i2{
+    left:18vw;
+    top:-5vh;
+}
+#i3{
+    left:28vw;
+    top:1vh;
+}
+#i4{
+    left:42vw;
+    top:27vh;
+}
+#i5{
+    right:20vw;
+    top:7vh;
+}
+
+/* active */
+#ac1{
+    left:0;
+    top:0;
+}
+#ac2{
+    left:23vw;
+    top:17vh;
+}
+#ac3{
+    left:10vw;
+    top:-5vh;
+}
+
+/* roots */
+#r1{
+    right:18vw;
+    bottom:12vh;
+}
+#r2{
+    left:-22vw;
+    top:25vh;
+}
+#r3{
+    left:-8vw;
+    top:15vh;
+}
+#r4{
+    right:42vw;
+    top:30vh;
+}
