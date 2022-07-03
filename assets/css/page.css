@@ -21,8 +21,16 @@ html, body{
     /* overflow: hidden; */
 }
 
+ul,li{
+    list-style: none;
+}
+
+.hidden{
+    display: none;
+}
+
 .main-nav{
-    font-size: 1.75em !important;
+    font-size: 1.75rem !important;
     position: fixed;
     top: 1.5rem;
     /* display: flex; */
@@ -45,12 +53,59 @@ html, body{
     /* text-align: center; */
     position: fixed;
     left: 50%;
+    /* transform: translate(-50%); */
+}
+.work a{
     transform: translate(-50%);
 }
 .info{
     /* text-align: right; */
     position: fixed;
     right: 6rem;
+}
+
+
+.left-sub-nav{
+    font-size: 1.25rem;
+    position: fixed;
+    left:3rem;
+    top: 9.5rem;
+    z-index: 1000;
+    width: fit-content;
+}
+.left-sub-nav a{
+    cursor: pointer !important;
+}
+
+.middle{
+    position: absolute;
+    top: 9.5rem;
+    left: calc((100vw - 6rem) / 5 + 3rem);
+    width: calc((100vw - 6rem) / 5 * 3 - 3rem);
+    height: fit-content;
+}
+.middle div{
+    padding-bottom: 1.75rem;
+}
+
+#studio img{
+    width: 108%;
+    margin-left: -2rem;
+}
+
+.right{
+    position: fixed;
+    top: 9.5rem;
+    left: calc((100vw - 6rem) / 5 * 4 + 3rem);
+    width: calc((100vw - 6rem) / 5 - 3rem);
+    height: calc(100vh - 9.5rem);
+}
+.right a{
+    display: block;
+}
+.credit{
+    position: absolute;
+    bottom: 1.75rem;
 }
 
 .bn{
