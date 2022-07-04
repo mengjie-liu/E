@@ -73,4 +73,14 @@ $(document).ready(function () {
     $(`#${subclass}`).siblings().addClass("hidden");
     $(`#${subclass}`).removeClass("hidden");
   });
+
+  $(".canv img")
+    .mouseenter(function () {
+      let content = $(this).next().html();
+      // console.log(content);
+      $(".title").html(content);
+    })
+    .mouseleave(function () {
+      $(".title").html("");
+    });
 });

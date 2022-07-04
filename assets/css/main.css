@@ -81,6 +81,24 @@ html, body{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+    background-color: white;
+}
+
+.canv p{
+    display: none;
+}
+
+.title{
+    font-size: 1.25rem;;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3000;
+    color: white;
+    mix-blend-mode: difference;
+    /* text-shadow: 1px 0 1px white; */
+    /* background-color: white; */
 }
 
 .disabled{
@@ -168,6 +186,12 @@ html, body{
 
 img:hover{
     z-index: 2000;
+}
+/* img:hover + p{
+    display: block;
+} */
+.title{
+    pointer-events: none;
 }
 
 /* conductive */
