@@ -2,6 +2,10 @@
     font-family: styreneB;
     src: url(../StyreneBLC-Regular.otf);
 }
+@font-face {
+    font-family: styreneBI;
+    src: url(../StyreneBLC-RegularItalic.otf);
+}
 
 *{
     padding: 0;
@@ -9,6 +13,10 @@
     text-decoration: none;
     color: black;
     font-family: styreneB;
+}
+
+a:hover{
+    font-family: styreneBI;
 }
 
 html, body{
