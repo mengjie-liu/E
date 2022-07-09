@@ -53,6 +53,12 @@ $(document).ready(function () {
     });
   });
 
+  $(".canv div").mouseenter(function () {
+    let divclass = $(this).attr("class");
+    // console.log(divclass);
+    $(".bgvd video").attr("src", `assets/${divclass}.mp4`);
+  });
+
   $(".sub-nav a").click(function () {
     let subclass = $(this).attr("id").slice(0, -1);
     if ($(this).hasClass("disabled")) {
