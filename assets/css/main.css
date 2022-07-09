@@ -128,8 +128,13 @@ video{
     display: none;
 }
 
+/* .invisible{
+    opacity: 0;
+} */
+
 .conductive, .aqueous, .plana, .insulative, .active, .mycorrhizae{
     position: absolute;
+    opacity: 1;
     /* display: block; */
 }
 .conductive{
