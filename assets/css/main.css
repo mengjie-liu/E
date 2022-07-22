@@ -7,6 +7,30 @@
     src: url(../StyreneBLC-RegularItalic.otf);
 }
 
+/* @media all and (orientation:portrait) {
+    .canv{
+        position: relative;
+        width:200vw;
+        height: 130vh;
+        left: 50%;
+        top: 50%;
+        transform-origin: center;
+        transform: translate(-50%,-50%) rotate(90deg);
+    }
+    } */
+
+/* @media all and (orientation:landscape) { */
+    .canv{
+        position: relative;
+        width:150vw;
+        height: 150vh;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        /* background-color: white; */
+    }
+    /* } */
+
 *{
     padding: 0;
     margin: 0;
@@ -91,16 +115,6 @@ video{
     margin-left:1rem;
     margin-right: 1rem;
     cursor: pointer !important;
-}
-
-.canv{
-    position: relative;
-    width:150vw;
-    height: 150vh;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    /* background-color: white; */
 }
 
 .canv p{
